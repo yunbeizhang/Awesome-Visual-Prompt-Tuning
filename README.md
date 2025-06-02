@@ -40,12 +40,12 @@ We encourage contributions and discussions to keep this repository up-to-date an
 
 This subsection focuses on visual prompts that consist of parameters optimized during the tuning process.
 
-| Title | Venue | Year | Keywords/Summary |
+| Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
 |  [Adversarial Reprogramming of Neural Networks](https://arxiv.org/abs/1806.11146)     |   ICLR    |  2019    |    First work            |
 | [Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources](https://arxiv.org/abs/2007.08714) | ICML | 2020 | [Code](https://github.com/yunyuntsai/Black-box-Adversarial-Reprogramming), Black-box|
-| [An Improved (Adversarial) Reprogramming Technique for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-86362-3_1) | ICANN | 2021 | |
-|[Adversarial Reprogramming of Pretrained Neural Networks for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3459637.3482053) | CIKM| 2021 | |
+| [An Improved (Adversarial) Reprogramming Technique for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-86362-3_1) | ICANN | 2021 |- |
+|[Adversarial Reprogramming of Pretrained Neural Networks for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3459637.3482053) | CIKM| 2021 |- |
 |[Fairness Reprogramming](https://arxiv.org/pdf/2209.10222) | NeurIPS | 2022 | [Code](https://github.com/UCSB-NLP-Chang/Fairness-Reprogramming), Fairness|
 | [Bayesian-guided Label Mapping for Visual Reprogramming](https://arxiv.org/abs/2410.24018) |  NeurIPS | 2024 | [Code](https://github.com/tmlr-group/bayesianlm), Label mapping|
 | [Sample-specific Masks for Visual Reprogramming-based Prompting](https://arxiv.org/abs/2406.03150) | ICML | 2024 | [Code](https://github.com/tmlr-group/SMM)|
