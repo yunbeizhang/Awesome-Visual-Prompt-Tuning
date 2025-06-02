@@ -51,4 +51,4 @@ This subsection focuses on visual prompts that consist of parameters optimized d
 | [Sample-specific Masks for Visual Reprogramming-based Prompting](https://arxiv.org/abs/2406.03150) | ICML | 2024 | [Code](https://github.com/tmlr-group/SMM)|
 | [Attribute-based Visual Reprogramming for Vision-Language Models](https://arxiv.org/abs/2501.13982) | ICLR | 2025 | [Code](https://github.com/tmlr-group/attrvr), Multi-modality|
 | [AutoVP: An Automated Visual Prompting Framework and Benchmark](https://arxiv.org/abs/2310.08381) | ICLR | 2024 | [Code](https://github.com/IBM/AutoVP)|
-| [Understanding and Improving Visual Prompting: A Label-Mapping Perspective](https://arxiv.org/abs/2211.11635) | CVPR | 2023 | [Code](https://github.com/optml-group/ilm-vp)|
+| [Understanding and Improving Visual Prompting: A Label-Mapping Perspective](https://arxiv.org/abs/2211.11635) | CVPR | 2023 | [Code](https://github.com/optml-group/ilm-vp), Label mapping|
