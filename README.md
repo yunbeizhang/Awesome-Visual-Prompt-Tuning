@@ -1,8 +1,7 @@
 # Awesome Visual Prompt Tuning
-[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges) 
+[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
 
 A curated list of awesome papers, resources, and tools for Visual Prompt Tuning (VPT).
 
@@ -11,9 +10,9 @@ Welcome to the **Awesome Visual Prompt Tuning** repository! This collection aims
 
 We have organized the surveyed papers into three primary categories based on the nature of the prompts:
 
-1.  **Non-Learnable Visual Prompts:** These prompts are typically handcrafted or based on predefined transformations.
-2.  **Learnable Visual Prompts:** These prompts consist of parameters that are optimized during the tuning process.
-3.  **Generative Visual Prompts:** These prompts are dynamically generated, often by another model or process.
+1.  [**Learnable Visual Prompts**](#learnable-visual-prompts)
+2.  **Generative Visual Prompts:** These prompts are dynamically generated, often by another model or process.
+3.  **Non-Learnable Visual Prompts:** These prompts are typically handcrafted or based on predefined transformations.
 
 Within each of these main categories, we further distinguish between two levels of prompt application:
 
@@ -36,3 +35,20 @@ We encourage contributions and discussions to keep this repository up-to-date an
 
 ---
 
+## Learnable Visual Prompts
+<a name="learnable-visual-prompts"></a>
+
+This subsection focuses on visual prompts that consist of parameters optimized during the tuning process.
+
+| Title | Venue | Year | Keywords/Summary |
+| :---- | :---- | :--- | :--------------- |
+|  [Adversarial Reprogramming of Neural Networks](https://arxiv.org/abs/1806.11146)     |   ICLR    |  2019    |    First work            |
+| [Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources](https://arxiv.org/abs/2007.08714) | ICML | 2020 | [Code](https://github.com/yunyuntsai/Black-box-Adversarial-Reprogramming), Black-box|
+| [An Improved (Adversarial) Reprogramming Technique for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-86362-3_1) | ICANN | 2021 | |
+|[Adversarial Reprogramming of Pretrained Neural Networks for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3459637.3482053) | CIKM| 2021 | |
+|[Fairness Reprogramming](https://arxiv.org/pdf/2209.10222) | NeurIPS | 2022 | [Code](https://github.com/UCSB-NLP-Chang/Fairness-Reprogramming), Fairness|
+| [Bayesian-guided Label Mapping for Visual Reprogramming](https://arxiv.org/abs/2410.24018) |  NeurIPS | 2024 | [Code](https://github.com/tmlr-group/bayesianlm), Label mapping|
+| [Sample-specific Masks for Visual Reprogramming-based Prompting](https://arxiv.org/abs/2406.03150) | ICML | 2024 | [Code](https://github.com/tmlr-group/SMM)|
+| [Attribute-based Visual Reprogramming for Vision-Language Models](https://arxiv.org/abs/2501.13982) | ICLR | 2025 | [Code](https://github.com/tmlr-group/attrvr), Multi-modality|
+| [AutoVP: An Automated Visual Prompting Framework and Benchmark](https://arxiv.org/abs/2310.08381) | ICLR | 2024 | [Code](https://github.com/IBM/AutoVP)|
+| [Understanding and Improving Visual Prompting: A Label-Mapping Perspective](https://arxiv.org/abs/2211.11635) | CVPR | 2023 | [Code](https://github.com/optml-group/ilm-vp)|
