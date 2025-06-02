@@ -37,8 +37,8 @@ We encourage contributions and discussions to keep this repository up-to-date an
 
 ## Learnable Visual Prompts
 <a name="learnable-visual-prompts"></a>
-
 This subsection focuses on visual prompts that consist of parameters optimized during the tuning process.
+### Pixel-Level
 
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
