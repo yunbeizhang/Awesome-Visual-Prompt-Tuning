@@ -42,13 +42,32 @@ This subsection focuses on visual prompts that consist of parameters optimized d
 
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
-|  [Adversarial Reprogramming of Neural Networks](https://arxiv.org/abs/1806.11146)     |   ICLR    |  2019    |    First work            |
-| [Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources](https://arxiv.org/abs/2007.08714) | ICML | 2020 | [Code](https://github.com/yunyuntsai/Black-box-Adversarial-Reprogramming), Black-box|
-| [An Improved (Adversarial) Reprogramming Technique for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-86362-3_1) | ICANN | 2021 |- |
-|[Adversarial Reprogramming of Pretrained Neural Networks for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3459637.3482053) | CIKM| 2021 |- |
-|[Fairness Reprogramming](https://arxiv.org/pdf/2209.10222) | NeurIPS | 2022 | [Code](https://github.com/UCSB-NLP-Chang/Fairness-Reprogramming), Fairness|
-| [Bayesian-guided Label Mapping for Visual Reprogramming](https://arxiv.org/abs/2410.24018) |  NeurIPS | 2024 | [Code](https://github.com/tmlr-group/bayesianlm), Label mapping|
-| [Sample-specific Masks for Visual Reprogramming-based Prompting](https://arxiv.org/abs/2406.03150) | ICML | 2024 | [Code](https://github.com/tmlr-group/SMM)|
-| [Attribute-based Visual Reprogramming for Vision-Language Models](https://arxiv.org/abs/2501.13982) | ICLR | 2025 | [Code](https://github.com/tmlr-group/attrvr), Multi-modality|
-| [AutoVP: An Automated Visual Prompting Framework and Benchmark](https://arxiv.org/abs/2310.08381) | ICLR | 2024 | [Code](https://github.com/IBM/AutoVP)|
-| [Understanding and Improving Visual Prompting: A Label-Mapping Perspective](https://arxiv.org/abs/2211.11635) | CVPR | 2023 | [Code](https://github.com/optml-group/ilm-vp), Label mapping|
+| [Adversarial Reprogramming of Neural Networks](https://arxiv.org/abs/1806.11146) | ICLR | 2019 | First work |
+| [Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources](https://arxiv.org/abs/2007.08714) | ICML | 2020 | [Code](https://github.com/yunyuntsai/Black-box-Adversarial-Reprogramming), Black-box |
+| [An Improved (Adversarial) Reprogramming Technique for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-86362-3_1) | ICANN | 2021 | - |
+| [Adversarial Reprogramming of Pretrained Neural Networks for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3459637.3482053) | CIKM | 2021 | - |
+| [Fairness Reprogramming](https://arxiv.org/pdf/2209.10222) | NeurIPS | 2022 | [Code](https://github.com/UCSB-NLP-Chang/Fairness-Reprogramming), Fairness |
+| [Understanding and Improving Visual Prompting: A Label-Mapping Perspective](https://arxiv.org/abs/2211.11635) | CVPR | 2023 | [Code](https://github.com/optml-group/ilm-vp), Label mapping |
+| [AutoVP: An Automated Visual Prompting Framework and Benchmark](https://arxiv.org/abs/2310.08381) | ICLR | 2024 | [Code](https://github.com/IBM/AutoVP) |
+| [Bayesian-guided Label Mapping for Visual Reprogramming](https://arxiv.org/abs/2410.24018) | NeurIPS | 2024 | [Code](https://github.com/tmlr-group/bayesianlm), Label mapping |
+| [Sample-specific Masks for Visual Reprogramming-based Prompting](https://arxiv.org/abs/2406.03150) | ICML | 2024 | [Code](https://github.com/tmlr-group/SMM) |
+| [Attribute-based Visual Reprogramming for Vision-Language Models](https://arxiv.org/abs/2501.13982) | ICLR | 2025 | [Code](https://github.com/tmlr-group/attrvr), Multi-modality |
+
+
+
+### Token-Level
+
+| Title | Venue | Year | Keywords |
+| :---- | :---- | :--- | :--------------- |
+| [Visual Prompt Tuning](https://link.springer.com/chapter/10.1007/978-3-031-19827-4_41) | ECCV | 2022 | [Github](https://github.com/KMnP/vpt) |
+| [LPT: Long-tailed Prompt Tuning for Image Classification](https://arxiv.org/abs/2210.01033) | ICLR | 2023 | [Github](https://github.com/DongSky/LPT) |
+| [Learning Expressive Prompting With Residuals for Vision Transformers](https://arxiv.org/abs/2303.15591) | CVPR | 2023 | - |
+| [Improving Visual Prompt Tuning for Self-supervised Vision Transformers](https://arxiv.org/abs/2306.05067) | ICML | 2023 | [Github](https://github.com/ryongithub/GatedPromptTuning) |
+| [E^2VPT: An Effective and Efficient Approach for Visual Prompt Tuning](https://arxiv.org/pdf/2307.13770) | ICCV | 2023 | [Github](https://github.com/ChengHan111/E2VPT) |
+| [SA2VP: Spatially Aligned-and-Adapted Visual Prompt](https://arxiv.org/abs/2312.10376) | AAAI | 2024 | [Github](https://github.com/tommy-xq/SA2VP) |
+| [Revisiting the Power of Prompt for Visual Tuning](https://arxiv.org/abs/2402.02382) | ICML | 2024 | [Github](https://github.com/WangYZ1608/Self-Prompt-Tuning) |
+| [Adaptive Prompt: Unlocking the Power of Visual Prompt Tuning](https://arxiv.org/abs/2411.01327) | arXiv | 2025 | [Github](https://github.com/runtsang/VFPT) |
+| [Semantic-Guided Visual Prompt Tuning for Vision Transformers](https://arxiv.org/abs/2505.23694) | CVPR | 2025 | [Github](https://github.com/runtsang/VFPT) |
+
+
+
