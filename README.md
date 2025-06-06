@@ -21,8 +21,6 @@ Welcome to the **Awesome Visual Prompt Tuning** repository! This collection aims
       - [Pixel-Level](#pixel-level-1)
       - [Token-Level](#token-level-1)
     - [3. Non-Learnable Visual Prompts](#3-non-learnable-visual-prompts)
-      - [Pixel-Level](#pixel-level-2)
-      - [Token-Level](#token-level-2)
   - [Applications and Advanced Topics](#applications-and-advanced-topics)
     - [VPT at Test-Time (Test-Time Adaptation)](#vpt-at-test-time-test-time-adaptation)
     - [Grey/Black-Box VPT](#greyblack-box-vpt)
@@ -66,7 +64,7 @@ This section covers prompts that consist of learnable parameters optimized durin
 | [Unleashing the Power of Visual Prompting At the Pixel Level](https://arxiv.org/pdf/2212.10556) | TMLR | 2024 | [Code](https://github.com/UCSC-VLAA/EVP)|
 
 #### Token-Level
-*Prompts are introduced at the level of image patches or feature tokens within the model.*
+*Prompts are introduced at the level of feature tokens within the model.*
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
 | [Visual Prompt Tuning](https://link.springer.com/chapter/10.1007/978-3-031-19827-4_41) | ECCV | 2022 | [Github](https://github.com/KMnP/vpt) |
@@ -99,12 +97,6 @@ This section includes prompts that are dynamically generated, often by another m
 <a name="non-learnable-visual-prompts"></a>
 This section focuses on prompts that are handcrafted or based on predefined transformations, without learnable parameters.
 
-#### Pixel-Level
-| Title | Venue | Year | Keywords |
-| :---- | :---- | :--- | :--------------- |
-|       |       |      |                  |
-
-#### Token-Level
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
 |       |       |      |                  |
@@ -117,14 +109,14 @@ Beyond the core methodologies, this section highlights the application of VPT in
 
 ### VPT at Test-Time (Test-Time Adaptation)
 <a name="vpt-at-test-time-test-time-adaptation"></a>
-*Papers focusing on adapting models using prompts on new data encountered during inference.*
+*Papers focusing on adapting models using prompts on new data encountered during inference. This setting is particularly challenging as it is often fully **unsupervised**, requiring adaptation without access to ground-truth labels.*
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
 |       |       |      |                  |
 
 ### Grey/Black-Box VPT
 <a name="greyblack-box-vpt"></a>
-*Applying VPT techniques when access to model weights or gradients is limited or unavailable.*
+*Applying VPT techniques when access to model weights or gradients is limited or unavailable. A key feature here is the reliance on **gradient-free** methods (e.g., Zeroth-Order Optimization - ZOO) to optimize prompts when backpropagation is not possible.*
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
 |       |       |      |                  |
