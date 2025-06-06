@@ -81,7 +81,7 @@ This section covers prompts that consist of learnable parameters optimized durin
 | [Revisiting the Power of Prompt for Visual Tuning](https://arxiv.org/abs/2402.02382) | ICML | 2024 | [Github](https://github.com/WangYZ1608/Self-Prompt-Tuning) |
 | [Adaptive Prompt: Unlocking the Power of Visual Prompt Tuning](https://arxiv.org/abs/2411.01327) | arXiv | 2025 | [Github](https://github.com/runtsang/VFPT) |
 | [Semantic-Guided Visual Prompt Tuning for Vision Transformers](https://arxiv.org/abs/2505.23694) | CVPR | 2025 | [Github](https://github.com/runtsang/VFPT) |
-| [Understanding Zero-Shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2212.07016) | ICLR | 2023 | [Code](https://github.com/cvlab-columbia/ZSRobust4FoundationModel), Adversarial Robustness|
+| [Understanding Zero-Shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2212.07016) | ICLR | 2023 | [Code](https://github.com/cvlab-columbia/ZSRobust4FoundationModel), (Pixel and Token)Adversarial Robustness|
 
 ### 2. Generative Visual Prompts
 <a name="generative-visual-prompts"></a>
