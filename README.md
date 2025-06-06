@@ -1,7 +1,12 @@
-# Awesome Visual Prompt Tuning
-[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning/graphs/commit-activity)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning/pulls)
+<h1 align="center">Awesome Visual Prompt Tuning</h1>
+
+<div align="center">
+
+[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+</div>
 
 A curated list of awesome papers, resources, and tools for Visual Prompt Tuning (VPT).
 
@@ -11,27 +16,26 @@ Welcome to the **Awesome Visual Prompt Tuning** repository! This collection aims
 
 ## Table of Contents
 
-- [Awesome Visual Prompt Tuning](#awesome-visual-prompt-tuning)
-  - [Table of Contents](#table-of-contents)
-  - [Core Methodologies](#core-methodologies)
-    - [1. Learnable Visual Prompts](#1-learnable-visual-prompts)
-      - [Pixel-Level](#pixel-level)
-      - [Token-Level](#token-level)
-    - [2. Generative Visual Prompts](#2-generative-visual-prompts)
-      - [Pixel-Level](#pixel-level-1)
-      - [Token-Level](#token-level-1)
-    - [3. Non-Learnable Visual Prompts](#3-non-learnable-visual-prompts)
-  - [Applications and Advanced Topics](#applications-and-advanced-topics)
-    - [VPT at Test-Time (Test-Time Adaptation)](#vpt-at-test-time-test-time-adaptation)
-    - [Grey/Black-Box VPT](#greyblack-box-vpt)
-    - [VPT in Multimodality](#vpt-in-multimodality)
-    - [VPT for Trustworthy AI](#vpt-for-trustworthy-ai)
-      - [Robustness](#robustness)
-      - [Fairness](#fairness)
-      - [Privacy](#privacy)
-      - [Calibration](#calibration)
-      - [Domain Generalization](#domain-generalization)
-  - [Related Surveys and Benchmarks](#related-surveys-and-benchmarks)
+- [Table of Contents](#table-of-contents)
+- [Core Methodologies](#core-methodologies)
+  - [1. Learnable Visual Prompts](#1-learnable-visual-prompts)
+    - [Pixel-Level](#pixel-level)
+    - [Token-Level](#token-level)
+  - [2. Generative Visual Prompts](#2-generative-visual-prompts)
+    - [Pixel-Level](#pixel-level-1)
+    - [Token-Level](#token-level-1)
+  - [3. Non-Learnable Visual Prompts](#3-non-learnable-visual-prompts)
+- [Applications and Advanced Topics](#applications-and-advanced-topics)
+  - [VPT at Test-Time (Test-Time Adaptation)](#vpt-at-test-time-test-time-adaptation)
+  - [Grey/Black-Box VPT](#greyblack-box-vpt)
+  - [VPT in Multimodality](#vpt-in-multimodality)
+  - [VPT for Trustworthy AI](#vpt-for-trustworthy-ai)
+    - [Robustness](#robustness)
+    - [Fairness](#fairness)
+    - [Privacy](#privacy)
+    - [Calibration](#calibration)
+    - [Domain Generalization](#domain-generalization)
+- [Related Surveys and Benchmarks](#related-surveys-and-benchmarks)
 ---
 
 ## Core Methodologies
@@ -175,4 +179,6 @@ This section lists other relevant survey papers and benchmarks in the broader ar
 
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
-| [A Systematic Survey of Prompt Engineering on Vision-Language Foundation Models](https://arxiv.org/abs/2307.12980)      |       |      |    [Code](https://github.com/zhengli97/Awesome-Prompt-Adapter-Learning-for-VLMs)              |
+| [A Systematic Survey of Prompt Engineering on Vision-Language Foundation Models](https://arxiv.org/abs/2307.12980)      |       |      |    [Code](https://github.com/JindongGu/Awesome-Prompting-on-Vision-Language-Model)              |
+| [Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey](https://arxiv.org/abs/2402.02242) | | | [Code](https://github.com/synbol/awesome-parameter-efficient-transfer-learning) |
+| [Prompt learning in computer vision: a survey](https://link.springer.com/content/pdf/10.1631/FITEE.2300389.pdf) | | | |
