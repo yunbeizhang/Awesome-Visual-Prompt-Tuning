@@ -6,12 +6,6 @@
 > 🔬 **Authors**:  
 > [**Xi Xiao**](https://scholar.google.com/citations?user=Q4DnRVgAAAAJ&hl=en)\*, [**Yunbei Zhang**](https://yunbeizhang.github.io/)\*, [**Lin Zhao**](https://lin-zhao-resolve.github.io/)\*, [**Cheng Han**](https://chenghan111.github.io/)\*\*, [**Xingjian Li**](https://scholar.google.com/citations?user=f9V0NZkAAAAJ&hl=en), [**Jihun Hamm**](https://www.cs.tulane.edu/~jhamm3/), [**Xiao Wang**](https://www.ornl.gov/staff-profile/xiao-wang), [**Hao Xu**](https://gaingod-xu.github.io/), [**Tianyang Wang**](https://wangt0716.github.io/index.html), [**Xue Lin**](https://xuelin.sites.northeastern.edu/), [**Min Xu**](https://xulabs.github.io/min-xu/)\*\*
 
-> \* Equal Contribution  \*\* Corresponding Author
-
-<p align="center"> 
-University of Alabama at Birmingham, Tulane University, Northeastern University, University of Missouri – Kansas City, Carnegie Mellon University, Oak Ridge National Laboratory  
-</p>
-
 
 
 
