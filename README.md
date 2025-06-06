@@ -3,7 +3,6 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning/graphs/commit-activity)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning/pulls)
 
-> 🔬 **Authors**:  
 > [**Xi Xiao**](https://scholar.google.com/citations?user=Q4DnRVgAAAAJ&hl=en)\*, [**Yunbei Zhang**](https://yunbeizhang.github.io/)\*, [**Lin Zhao**](https://lin-zhao-resolve.github.io/)\*, [**Cheng Han**](https://chenghan111.github.io/)\*\*, [**Xingjian Li**](https://scholar.google.com/citations?user=f9V0NZkAAAAJ&hl=en), [**Jihun Hamm**](https://www.cs.tulane.edu/~jhamm3/), [**Xiao Wang**](https://www.ornl.gov/staff-profile/xiao-wang), [**Hao Xu**](https://gaingod-xu.github.io/), [**Tianyang Wang**](https://wangt0716.github.io/index.html), [**Xue Lin**](https://xuelin.sites.northeastern.edu/), [**Min Xu**](https://xulabs.github.io/min-xu/)\*\*
 
 
