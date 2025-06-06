@@ -6,9 +6,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+*A curated list of awesome papers, resources, and tools for Visual Prompt Tuning (VPT).*
 </div>
 
-A curated list of awesome papers, resources, and tools for Visual Prompt Tuning (VPT).
+
 
 ---
 
