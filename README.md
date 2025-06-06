@@ -3,6 +3,11 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+> **Authors**: [**Xi Xiao**](https://example.com/xi-xiao), [**Yunbei Zhang**](https://example.com/yunbei-xu), [**Lin Zhao**](https://example.com/yunbei-xu), [**Zheda Mai**](https://example.com/yunbei-xu), [**Cheng Han**](https://example.com/yunbei-xu), [**Xingjian Li**](https://example.com/yunbei-xu), [**Jihun Hamm**](https://example.com/yunbei-xu), [**Xiao Wang**](https://example.com/yunbei-xu), [**Hao Xu**](https://example.com/yunbei-xu), [**Tianyang Wang**](https://example.com/yunbei-xu), [**Xue Lin**](https://example.com/yunbei-xu), [**Min Xu**](https://example.com/yunbei-xu)  
+> **Affiliations**: University of Alabama at Birmingham, Tulane University, Carnegie Mellon University  
+> 📅 **Last updated**: 2025
+
+
 A curated list of awesome papers, resources, and tools for Visual Prompt Tuning (VPT).
 
 ---
