@@ -1,7 +1,7 @@
 # Awesome Visual Prompt Tuning
-[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning/graphs/commit-activity)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning/pulls)
 
 > **Authors**: [**Xi Xiao**](https://example.com/xi-xiao), [**Yunbei Zhang**](https://example.com/yunbei-xu), [**Lin Zhao**](https://example.com/yunbei-xu), [**Cheng Han**](https://example.com/yunbei-xu), [**Xingjian Li**](https://example.com/yunbei-xu), [**Jihun Hamm**](https://example.com/yunbei-xu), [**Xiao Wang**](https://example.com/yunbei-xu), [**Hao Xu**](https://example.com/yunbei-xu), [**Tianyang Wang**](https://example.com/yunbei-xu), [**Xue Lin**](https://example.com/yunbei-xu), [**Min Xu**](https://example.com/yunbei-xu)  
 
