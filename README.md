@@ -3,11 +3,6 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning/graphs/commit-activity)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning/pulls)
 
-
-
-
-
-
 A curated list of awesome papers, resources, and tools for Visual Prompt Tuning (VPT).
 
 ---
@@ -36,7 +31,7 @@ Welcome to the **Awesome Visual Prompt Tuning** repository! This collection aims
       - [Privacy](#privacy)
       - [Calibration](#calibration)
       - [Domain Generalization](#domain-generalization)
-
+  - [Related Surveys and Benchmarks](#related-surveys-and-benchmarks)
 ---
 
 ## Core Methodologies
@@ -171,3 +166,13 @@ Investigating the role of VPT in enhancing different aspects of model trustworth
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
 |       |       |      |                  |
+
+---
+
+## Related Surveys and Benchmarks
+<a name="related-surveys-and-benchmarks"></a>
+This section lists other relevant survey papers and benchmarks in the broader area of prompt-based learning and parameter-efficient fine-tuning.
+
+| Title | Venue | Year | Keywords |
+| :---- | :---- | :--- | :--------------- |
+| [A Systematic Survey of Prompt Engineering on Vision-Language Foundation Models](https://arxiv.org/abs/2307.12980)      |       |      |    [Code](https://github.com/zhengli97/Awesome-Prompt-Adapter-Learning-for-VLMs)              |
