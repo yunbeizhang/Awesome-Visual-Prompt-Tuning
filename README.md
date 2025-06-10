@@ -113,11 +113,25 @@ This section focuses on prompts that are handcrafted or based on predefined tran
 Beyond the core methodologies, this section highlights the application of VPT in significant and emerging areas.
 
 ### VPT at Test-Time (Test-Time Adaptation)
-<a name="vpt-at-test-time-test-time-adaptation"></a>
 *Papers focusing on adapting models using prompts on new data encountered during inference. This setting is particularly challenging as it is often fully **unsupervised**, requiring adaptation without access to ground-truth labels.*
+
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
-|       |       |      |                  |
+| [Visual Prompt Tuning for Test-time Domain Adaptation](https://arxiv.org/abs/2210.04831) | arXiv | 2022 | TTA, VPT |
+| [Test-Time Prompt Tuning for Zero-Shot Generalization in Vision-Language Models](https://openreview.net/forum?id=e8PVEkSa4Fq) | NeurIPS | 2022 | Zero-shot, Vision-Language |
+| [Decorate the Newcomers: Visual Domain Prompt for Continual Test Time Adaptation](https://ojs.aaai.org/index.php/AAAI/article/view/25922) | AAAI | 2023 | Continual TTA |
+| [Test-Time Personalization with Meta Prompt for Gaze Estimation](https://ojs.aaai.org/index.php/AAAI/article/view/28151) | AAAI | 2023 | Personalization, Meta Prompt |
+| [Cloud-Device Collaborative Adaptation to Continual Changing Environments in the Real-World](https://openaccess.thecvf.com/content/CVPR2023/html/Pan_Cloud-Device_Collaborative_Adaptation_to_Continual_Changing_Environments_in_the_Real-World_CVPR_2023_paper.html) | CVPR | 2023 | Real-world TTA |
+| [Diverse Data Augmentation with Diffusions for Effective Test-time Prompt Tuning](https://openaccess.thecvf.com/content/ICCV2023/html/Feng_Diverse_Data_Augmentation_with_Diffusions_for_Effective_Test-time_Prompt_Tuning_ICCV_2023_paper.html) | ICCV | 2023 | Diffusion, Data Augmentation |
+| [Convolutional Visual Prompt for Robust Visual Perception](https://proceedings.neurips.cc/paper_files/paper/2023/hash/58be158bf831a706b1a66cffbc401cac-Abstract-Conference.html) | NeurIPS | 2023 | Convolutional Prompt |
+| [SwapPrompt: Test-Time Prompt Adaptation for Vision-Language Models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/cdd0640218a27e9e2c0e52e324e25db0-Abstract-Conference.html) | NeurIPS | 2023 | Prompt Swapping |
+| [Align Your Prompts: Test-Time Prompting with Distribution Alignment for Zero-Shot Generalization](https://proceedings.neurips.cc/paper_files/paper/2023/hash/fe8debfd5a36ada52e038c8b2078b2ce-Abstract-Conference.html) | NeurIPS | 2023 | Distribution Alignment |
+| [TEMPERA: Test-Time Prompt Editing via Reinforcement Learning](https://openreview.net/forum?id=gSHyqBijPFO) | ICLR | 2023 | Reinforcement Learning |
+| [Robust Test-Time Adaptation for Zero-Shot Prompt Tuning](https://ojs.aaai.org/index.php/AAAI/article/view/29611) | AAAI | 2024 | Robustness, Zero-shot |
+| [Test-Time Adaptation with CLIP Reward for Zero-Shot Generalization in Vision-Language Models](https://openreview.net/forum?id=kIP0duasBb) | ICLR | 2024 | CLIP Reward, Zero-shot |
+| [C-TPT: Calibrated Test-Time Prompt Tuning for Vision-Language Models via Text Feature Dispersion](https://openreview.net/forum?id=jzzEHTBFOT) | ICLR | 2024 | Calibration |
+| [Improving Text-to-Image Consistency via Automatic Prompt Optimization](https://arxiv.org/abs/2403.17804) | arXiv | 2024 | Text-to-Image, Consistency |
+
 
 ### Grey/Black-Box VPT
 <a name="greyblack-box-vpt"></a>
