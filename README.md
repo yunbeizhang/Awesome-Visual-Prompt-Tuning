@@ -200,3 +200,5 @@ This section lists other relevant survey papers and benchmarks in the broader ar
 | [A Systematic Survey of Prompt Engineering on Vision-Language Foundation Models](https://arxiv.org/abs/2307.12980)      |       |      |    [Code](https://github.com/JindongGu/Awesome-Prompting-on-Vision-Language-Model)              |
 | [Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: A Survey](https://arxiv.org/abs/2402.02242) | | | [Code](https://github.com/synbol/awesome-parameter-efficient-transfer-learning) |
 | [Prompt learning in computer vision: a survey](https://link.springer.com/content/pdf/10.1631/FITEE.2300389.pdf) | | | |
+| [Visual Prompting in Multimodal Large Language Models: A Survey](https://arxiv.org/abs/2409.15310) | | | |
+
