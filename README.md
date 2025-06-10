@@ -57,8 +57,8 @@ This section covers prompts that consist of learnable parameters optimized durin
 | [Adversarial Reprogramming of Pretrained Neural Networks for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3459637.3482053) | CIKM | 2021 | - |
 | [Fairness Reprogramming](https://arxiv.org/pdf/2209.10222) | NeurIPS | 2022 | [Code](https://github.com/UCSB-NLP-Chang/Fairness-Reprogramming), Fairness |
 | [Understanding and Improving Visual Prompting: A Label-Mapping Perspective](https://arxiv.org/abs/2211.11635) | CVPR | 2023 | [Code](https://github.com/optml-group/ilm-vp), Label mapping |
-| [Dynamic Visual Prompt Tuning for Parameter Efficient Transfer Learning](https://arxiv.org/abs/2303.01449) | PRCV    | 2023 | [Github](https://github.com/dvlab-research/DVPT)   | Dynamic token prompt generation                    |
-| [InsVP: Efficient Instance Visual Prompting from Image Itself](https://arxiv.org/abs/2308.09751)          | ACM MM    | 2024 | [Github](https://github.com/BeSpontaneous/InsVP)   | Instance-aware token-level visual prompt tuning    |
+| [Dynamic Visual Prompt Tuning for Parameter Efficient Transfer Learning](https://arxiv.org/abs/2309.06123) | PRCV    | 2023 | -   | Dynamic token prompt generation                    |
+| [InsVP: Efficient Instance Visual Prompting from Image Itself](https://openreview.net/pdf?id=OTjo1q8rWL)          | ACM MM    | 2024 | -   | Instance-aware token-level visual prompt tuning    |
 | [AutoVP: An Automated Visual Prompting Framework and Benchmark](https://arxiv.org/abs/2310.08381) | ICLR | 2024 | [Code](https://github.com/IBM/AutoVP) |
 | [Bayesian-guided Label Mapping for Visual Reprogramming](https://arxiv.org/abs/2410.24018) | NeurIPS | 2024 | [Code](https://github.com/tmlr-group/bayesianlm), Label mapping |
 | [Sample-specific Masks for Visual Reprogramming-based Prompting](https://arxiv.org/abs/2406.03150) | ICML | 2024 | [Code](https://github.com/tmlr-group/SMM) |
