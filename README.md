@@ -77,7 +77,6 @@ This section covers prompts that consist of learnable parameters optimized durin
 | [Visual Prompt Tuning](https://link.springer.com/chapter/10.1007/978-3-031-19827-4_41) | ECCV | 2022 | [Github](https://github.com/KMnP/vpt) |
 | [LPT: Long-tailed Prompt Tuning for Image Classification](https://arxiv.org/abs/2210.01033) | ICLR | 2023 | [Github](https://github.com/DongSky/LPT) |
 | [Learning Expressive Prompting With Residuals for Vision Transformers](https://arxiv.org/abs/2303.15591) | CVPR | 2023 | - |
-| [Understanding Zero-Shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2212.07016) | ICLR | 2023 | [Code](https://github.com/cvlab-columbia/ZSRobust4FoundationModel), (Pixel and Token)Adversarial Robustness|
 | [Improving Visual Prompt Tuning for Self-supervised Vision Transformers](https://arxiv.org/abs/2306.05067) | ICML | 2023 | [Github](https://github.com/ryongithub/GatedPromptTuning) |
 | [E^2VPT: An Effective and Efficient Approach for Visual Prompt Tuning](https://arxiv.org/pdf/2307.13770) | ICCV | 2023 | [Github](https://github.com/ChengHan111/E2VPT) |
 | [SA2VP: Spatially Aligned-and-Adapted Visual Prompt](https://arxiv.org/abs/2312.10376) | AAAI | 2024 | [Github](https://github.com/tommy-xq/SA2VP) |
@@ -148,7 +147,7 @@ Beyond the core methodologies, this section highlights the application of VPT in
 *Exploring how visual prompts interact and integrate with other modalities like text or audio.*
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
-|       |       |      |                  |
+| [Understanding Zero-Shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2212.07016) | ICLR | 2023 | [Code](https://github.com/cvlab-columbia/ZSRobust4FoundationModel), (Pixel and Token)Adversarial Robustness|
 
 ### VPT for Trustworthy AI
 <a name="vpt-for-trustworthy-ai"></a>
