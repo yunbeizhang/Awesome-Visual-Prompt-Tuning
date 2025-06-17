@@ -92,7 +92,7 @@ This section includes prompts that are dynamically generated, often by another m
 #### Pixel-Level
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
-|       |       |      |                  |
+|[BlackVIP: Black-Box Visual Prompting for Robust Transfer Learning](https://arxiv.org/pdf/2303.14773)       |  CVPR     |  2023    |  [Code](https://github.com/changdaeoh/BlackVIP), Black-box                |
 
 #### Token-Level
 | Title | Venue | Year | Keywords |
@@ -140,7 +140,8 @@ Beyond the core methodologies, this section highlights the application of VPT in
 *Applying VPT techniques when access to model weights or gradients is limited or unavailable. A key feature here is the reliance on **gradient-free** methods (e.g., Zeroth-Order Optimization - ZOO) to optimize prompts when backpropagation is not possible.*
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
-|       |       |      |                  |
+| [Transfer Learning without Knowing: Reprogramming Black-box Machine Learning Models with Scarce Data and Limited Resources](https://arxiv.org/abs/2007.08714) | ICML | 2020 | [Code](https://github.com/yunyuntsai/Black-box-Adversarial-Reprogramming), Black-box |
+|[BlackVIP: Black-Box Visual Prompting for Robust Transfer Learning](https://arxiv.org/pdf/2303.14773)       |  CVPR     |  2023    |  [Code](https://github.com/changdaeoh/BlackVIP), Black-box                |
 
 ### VPT in Multimodality
 <a name="vpt-in-multimodality"></a>
@@ -158,7 +159,9 @@ Investigating the role of VPT in enhancing different aspects of model trustworth
 *Improving model performance against adversarial attacks or distribution shifts.*
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
-|       |       |      |                  |
+| [Visual Prompting for Adversarial Robustness](https://arxiv.org/abs/2210.06284) | ICASSP | 2023 | [Code](https://github.com/Phoveran/vp-for-adversarial-robustness), Adversarial Robustness|
+| [Understanding Zero-Shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2212.07016) | ICLR | 2023 | [Code](https://github.com/cvlab-columbia/ZSRobust4FoundationModel), Adversarial Robustness|
+| [One Prompt Word is Enough to Boost Adversarial Robustness for Pre-trained Vision-Language Models](https://arxiv.org/pdf/2403.01849) | CVPR | 2024 | [Code](https://github.com/TreeLLi/APT), Adversarial Robustness, Multi-modal|
 
 #### Fairness
 <a name="fairness"></a>
@@ -172,7 +175,7 @@ Investigating the role of VPT in enhancing different aspects of model trustworth
 *Protecting sensitive information in visual data during model training or inference.*
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
-|       |       |      |                  |
+| [Exploring the Benefits of Visual Prompting in Differential Privacy](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Exploring_the_Benefits_of_Visual_Prompting_in_Differential_Privacy_ICCV_2023_paper.pdf) | ICCV | 2023 | [Code](https://github.com/EzzzLi/Prom-PATE), Privacy|
 
 #### Calibration
 <a name="calibration"></a>
