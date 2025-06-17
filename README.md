@@ -69,6 +69,8 @@ This section covers prompts that consist of learnable parameters optimized durin
 | [Exploring the Benefits of Visual Prompting in Differential Privacy](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Exploring_the_Benefits_of_Visual_Prompting_in_Differential_Privacy_ICCV_2023_paper.pdf) | ICCV | 2023 | [Code](https://github.com/EzzzLi/Prom-PATE), Privacy|
 | [Neural Clamping: Joint Input Perturbation and Temperature Scaling for Neural Network Calibration](https://arxiv.org/pdf/2209.11604) | TMLR | 2024 | [Code](https://github.com/yungchentang/NCToolkit), Uncertainty|
 | [Unleashing the Power of Visual Prompting At the Pixel Level](https://arxiv.org/pdf/2212.10556) | TMLR | 2024 | [Code](https://github.com/UCSC-VLAA/EVP)|
+| [Exploring Visual Prompts for Adapting Large-Scale Models](https://arxiv.org/abs/2203.17274) | arXiv | 2022 | |
+
 
 #### Token-Level
 *Prompts are introduced at the level of feature tokens within the model.*
