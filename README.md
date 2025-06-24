@@ -19,27 +19,27 @@ Welcome to the **Awesome Visual Prompt Tuning** repository! This collection aims
 
 - [Table of Contents](#table-of-contents)
 - [Core Methodologies](#core-methodologies)
-  - [1. Learnable Visual Prompts](#1-learnable-visual-prompts)
-    - [Pixel-Level](#pixel-level)
+  - **1. Learnable Visual Prompts**  
+    - [Pixel-Level](#pixel-level)  
     - [Token-Level](#token-level)
-  - [2. Generative Visual Prompts](#2-generative-visual-prompts)
-    - [Pixel-Level](#pixel-level-1)
+  - **2. Generative Visual Prompts**  
+    - [Pixel-Level](#pixel-level-1)  
     - [Token-Level](#token-level-1)
-  - [3. Non-Learnable Visual Prompts](#3-non-learnable-visual-prompts)
+  - **3. Non-Learnable Visual Prompts**  
 - [Applications and Advanced Topics](#applications-and-advanced-topics)
-  - [VPT in Medical Images]
-  - [VPT in 3D Point Cloud]
-  - [VPT at Test-Time (Test-Time Adaptation)](#vpt-at-test-time-test-time-adaptation)
-  - [Grey/Black-Box VPT](#greyblack-box-vpt)
+  - [VPT in Medical Images](#vpt-in-medical-images)
+  - [VPT in 3D Point Cloud](#vpt-in-3d-point-cloud)
+  - [VPT at Test‑Time (Test‑Time Adaptation)](#vpt-at-test-time-test-time-adaptation)
+  - [Grey/Black‑Box VPT](#greyblack-box-vpt)
   - [VPT in Multimodality](#vpt-in-multimodality)
-  - [VPT for Trustworthy AI](#vpt-for-trustworthy-ai)
-    - [Robustness](#robustness)
-    - [Fairness](#fairness)
-    - [Privacy](#privacy)
-    - [Calibration](#calibration)
+  - [VPT for Trustworthy AI](#vpt-for-trustworthy-ai)  
+    - [Robustness](#robustness)  
+    - [Fairness](#fairness)  
+    - [Privacy](#privacy)  
+    - [Calibration](#calibration)  
     - [Domain Generalization](#domain-generalization)
 - [Related Surveys and Benchmarks](#related-surveys-and-benchmarks)
----
+
 
 ## Core Methodologies
 <a name="core-methodologies"></a>
