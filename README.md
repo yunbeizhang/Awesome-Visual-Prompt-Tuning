@@ -32,6 +32,10 @@ Welcome to the **Awesome Visual Prompt Tuning** repository! This collection aims
   - [VPT at Test‑Time (Test‑Time Adaptation)](#vpt-at-test-time-test-time-adaptation)
   - [Grey/Black‑Box VPT](#greyblack-box-vpt)
   - [VPT in Multimodality](#vpt-in-multimodality)
+  - [VPT in Video Understanding](#vpt-in-video-understanding)
+  - [VPT for Vision‑Language Segmentation](#vpt-for-vision-language-segmentation)
+  - [VPT for Compressed Video Streams](#vpt-for-compressed-video-streams)
+  - [VPT in Instruction‑Tuned LMMs](#vpt-in-instruction-tuned-lmms)
   - [VPT for Trustworthy AI](#vpt-for-trustworthy-ai)  
     - [Robustness](#robustness)  
     - [Fairness](#fairness)  
@@ -153,6 +157,25 @@ Beyond the core methodologies, this section highlights the application of VPT in
 | Title | Venue | Year | Keywords |
 | :---- | :---- | :--- | :--------------- |
 | [Understanding Zero-Shot Adversarial Robustness for Large-Scale Models](https://arxiv.org/abs/2212.07016) | ICLR | 2023 | [Code](https://github.com/cvlab-columbia/ZSRobust4FoundationModel), (Pixel and Token)Adversarial Robustness|
+
+
+### VPT in Video Understanding
+*Methods that apply visual prompt tuning to video models using spatio-temporal token injection or pixel-level perturbations.*
+| Title | Venue | Year | Keywords |
+| :---- | :---- | :--- | :-------- |
+| [STOP: Spatial-Temporal Dynamic Prompting for Video Models](https://arxiv.org/pdf/2503.15973) | CVPR | 2025 | Token + Temporal Prompt |
+
+### VPT for Vision-Language Segmentation
+*Prompt tuning methods tailored for segmentation tasks with vision-language models.*
+
+### VPT for Compressed Video Streams
+*Works that explore prompt adaptation specifically for efficiency under compressed video input.*
+
+### VPT in Instruction-Tuned LMMs
+*Visual prompt tuning integrated with instruction-tuned large multimodal models (e.g., LLaVA, GPT-4V).*
+
+
+
 
 ### VPT for Trustworthy AI
 <a name="vpt-for-trustworthy-ai"></a>
