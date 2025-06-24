@@ -27,6 +27,8 @@ Welcome to the **Awesome Visual Prompt Tuning** repository! This collection aims
     - [Token-Level](#token-level-1)
   - [3. Non-Learnable Visual Prompts](#3-non-learnable-visual-prompts)
 - [Applications and Advanced Topics](#applications-and-advanced-topics)
+  - [VPT in Medical Images]
+  - [VPT in 3D Point Cloud]
   - [VPT at Test-Time (Test-Time Adaptation)](#vpt-at-test-time-test-time-adaptation)
   - [Grey/Black-Box VPT](#greyblack-box-vpt)
   - [VPT in Multimodality](#vpt-in-multimodality)
