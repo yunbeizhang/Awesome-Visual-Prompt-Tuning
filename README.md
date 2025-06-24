@@ -70,7 +70,7 @@ This section covers prompts that consist of learnable parameters optimized durin
 | [Neural Clamping: Joint Input Perturbation and Temperature Scaling for Neural Network Calibration](https://arxiv.org/pdf/2209.11604) | TMLR | 2024 | [Code](https://github.com/yungchentang/NCToolkit), Uncertainty|
 | [Unleashing the Power of Visual Prompting At the Pixel Level](https://arxiv.org/pdf/2212.10556) | TMLR | 2024 | [Code](https://github.com/UCSC-VLAA/EVP)|
 | [Exploring Visual Prompts for Adapting Large-Scale Models](https://arxiv.org/abs/2203.17274) | arXiv | 2022 | |
-
+| [Exploring Visual Prompts for Adapting Large-Scale Models](https://arxiv.org/abs/2203.17274) | arXiv | 2022 | |
 
 #### Token-Level
 *Prompts are introduced at the level of feature tokens within the model.*
