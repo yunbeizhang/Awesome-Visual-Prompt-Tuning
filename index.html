@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt-based Adaptation in Large-scale Vision Models: A Survey</title>
+    <meta name="description" content="A comprehensive survey on Prompt-based Adaptation (PA) in large-scale vision models. Accepted to TMLR 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ── palette ── */
+        :root {
+            --paper: #ffffff;
+            --ink: #1a1a2e;
+            --ink-light: #555770;
+            --ink-faint: #9496a8;
+            --rule: #e0e2ea;
+            --accent: #1b3a6b;
+            --accent-hover: #142d54;
+            --blue: #1b3a6b;
+            --blue-light: #eef2f8;
+            --vp-bg: #f0f4fa;
+            --vp-border: #c4d2e8;
+            --vpt-bg: #f0f4fa;
+            --vpt-border: #c4d2e8;
+            --serif: 'Source Serif 4', 'Times New Roman', 'Times', serif;
+            --sans: 'Source Sans 3', 'Helvetica Neue', sans-serif;
+            --mono: 'IBM Plex Mono', monospace;
+            --body-w: 1060px;
+            --wide-w: 1200px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background: var(--paper);
+            color: var(--ink);
+            font-size: 17px;
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── layout columns ── */
+        .col { max-width: var(--body-w); margin: 0 auto; padding: 0 28px; }
+        .col-wide { max-width: var(--wide-w); margin: 0 auto; padding: 0 28px; }
+
+        /* ── top rule ── */
+        .top-rule {
+            height: 4px;
+            background: var(--accent);
+        }
+
+        /* ── header / title block ── */
+        header {
+            padding: 64px 0 40px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        header .venue {
+            font-family: var(--sans);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 18px;
+        }
+
+        header h1 {
+            font-family: var(--serif);
+            font-size: clamp(28px, 3.2vw, 42px);
+            font-weight: 600;
+            line-height: 1.15;
+            color: var(--ink);
+            margin-bottom: 28px;
+            max-width: 100%;
+        }
+
+        .author-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 18px;
+            font-size: 15.5px;
+            line-height: 1.9;
+            color: var(--ink);
+        }
+
+        .author-block a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid var(--rule);
+            transition: border-color 0.15s;
+        }
+        .author-block a:hover { border-color: var(--accent); color: var(--accent); }
+
+        .author-block .sep { color: var(--ink-faint); }
+
+        .meta-notes {
+            margin-top: 8px;
+            font-size: 13.5px;
+            color: var(--ink-light);
+        }
+
+        .affiliations {
+            margin-top: 14px;
+            font-size: 13.5px;
+            color: var(--ink-light);
+            line-height: 1.7;
+        }
+
+        /* ── links row ── */
+        .links-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 24px;
+        }
+
+        .link-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 7px 18px;
+            font-size: 13.5px;
+            font-weight: 600;
+            font-family: var(--sans);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .link-pill svg { width: 15px; height: 15px; fill: currentColor; }
+
+        .link-pill.primary {
+            background: var(--accent);
+            color: #fff;
+        }
+        .link-pill.primary:hover { background: var(--accent-hover); }
+
+        .link-pill.secondary {
+            background: transparent;
+            color: var(--ink);
+            border: 1.5px solid var(--rule);
+        }
+        .link-pill.secondary:hover { border-color: var(--ink-light); background: rgba(0,0,0,0.03); }
+
+        /* ── sections ── */
+        .section {
+            padding: 48px 0;
+            border-bottom: 1px solid var(--rule);
+        }
+        .section:last-of-type { border-bottom: none; }
+
+        .section-label {
+            font-family: var(--sans);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: var(--serif);
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 18px;
+            color: var(--ink);
+        }
+
+        h3 {
+            font-family: var(--serif);
+            font-size: 21px;
+            font-weight: 600;
+            margin: 32px 0 10px;
+            color: var(--ink);
+        }
+
+        p { margin-bottom: 16px; color: var(--ink); }
+        p.muted { color: var(--ink-light); }
+
+        /* ── tldr ── */
+        .tldr {
+            margin: 32px 0;
+            padding: 22px 28px;
+            background: #fff;
+            border-left: 4px solid var(--accent);
+            font-family: var(--serif);
+            font-size: 19px;
+            line-height: 1.65;
+            font-style: italic;
+            color: var(--ink);
+        }
+
+        /* ── stats ribbon ── */
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin: 36px 0;
+        }
+
+        .stat {
+            flex: 1;
+            text-align: center;
+            padding: 18px 8px;
+            border-top: 2px solid var(--rule);
+        }
+
+        .stat .num {
+            font-family: var(--serif);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .stat .lbl {
+            font-size: 12.5px;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: var(--ink-light);
+            margin-top: 6px;
+        }
+
+        /* ── figures: full-bleed inside col-wide ── */
+        figure {
+            margin: 36px 0;
+        }
+
+        figure img {
+            width: 100%;
+            display: block;
+        }
+
+        figcaption {
+            max-width: var(--body-w);
+            margin: 10px auto 0;
+            padding: 0 28px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--ink-light);
+        }
+        figcaption strong { color: var(--ink); font-weight: 600; }
+
+        /* ── taxonomy side-by-side ── */
+        .taxonomy-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 28px 0;
+        }
+
+        .tax-block {
+            padding: 24px;
+            border-radius: 3px;
+        }
+
+        .tax-block.vp { background: var(--vp-bg); border: 1px solid var(--vp-border); }
+        .tax-block.vpt { background: var(--vpt-bg); border: 1px solid var(--vpt-border); }
+
+        .tax-block h3 {
+            font-size: 18px;
+            margin: 0 0 4px;
+        }
+
+        .tax-block .subtitle {
+            font-size: 13.5px;
+            color: var(--ink-light);
+            margin-bottom: 14px;
+        }
+
+        .tax-block dl {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 4px 12px;
+            font-size: 15px;
+        }
+
+        .tax-block dt {
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .tax-block dd { color: var(--ink-light); }
+
+        /* ── domain chips ── */
+        .chip-section h3 { margin-bottom: 14px; }
+
+        .chip-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .chip {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 6px 16px;
+            border-radius: 3px;
+            background: var(--blue-light);
+            border: 1px solid var(--rule);
+            color: var(--ink);
+            text-decoration: none;
+            transition: background 0.15s, border-color 0.15s;
+        }
+
+        a.chip:hover {
+            background: #dce5f2;
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* ── challenges accordion ── */
+        .challenge-item {
+            border-bottom: 1px solid var(--rule);
+            padding: 16px 0;
+        }
+        .challenge-item:first-child { border-top: 1px solid var(--rule); }
+
+        .challenge-item summary {
+            font-family: var(--serif);
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--ink);
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .challenge-item summary::before {
+            content: "+";
+            font-family: var(--mono);
+            font-size: 18px;
+            color: var(--accent);
+            width: 20px;
+            text-align: center;
+            flex-shrink: 0;
+            transition: transform 0.15s;
+        }
+
+        .challenge-item[open] summary::before {
+            content: "\2212";
+        }
+
+        .challenge-item summary::-webkit-details-marker { display: none; }
+
+        .challenge-body {
+            padding: 10px 0 4px 30px;
+            font-size: 15.5px;
+            color: var(--ink-light);
+            line-height: 1.7;
+        }
+
+        /* ── bibtex ── */
+        .bib-block {
+            position: relative;
+            background: #1a1a2e;
+            color: #cdd0dc;
+            padding: 22px 24px;
+            border-radius: 3px;
+            font-family: var(--mono);
+            font-size: 13px;
+            line-height: 1.7;
+            overflow-x: auto;
+            margin-top: 16px;
+        }
+
+        .bib-block .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #999;
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 11.5px;
+            font-family: var(--sans);
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .bib-block .copy-btn:hover { background: rgba(255,255,255,0.15); color: #ccc; }
+
+        /* ── footer ── */
+        footer {
+            padding: 36px 0;
+            text-align: center;
+            font-size: 13.5px;
+            color: var(--ink-faint);
+            border-top: 1px solid var(--rule);
+        }
+
+        footer a { color: var(--blue); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        /* ── responsive ── */
+        @media (max-width: 700px) {
+            .taxonomy-row { grid-template-columns: 1fr; }
+            .stats { flex-wrap: wrap; }
+            .stat { min-width: 45%; }
+            header h1 { font-size: 28px; }
+            .tldr { font-size: 17px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-rule"></div>
+
+<!-- ════════ HEADER ════════ -->
+<header>
+    <div class="col">
+        <div class="venue">Transactions on Machine Learning Research &mdash; 2026</div>
+        <h1>Prompt-based Adaptation in Large-scale Vision Models: A Survey</h1>
+
+        <div class="author-block">
+            <span>Xi Xiao*</span><span class="sep">&middot;</span>
+            <span>Yunbei Zhang*</span><span class="sep">&middot;</span>
+            <span>Lin Zhao*</span><span class="sep">&middot;</span>
+            <span>Yiyang Liu*</span><span class="sep">&middot;</span>
+            <span>Xiaoying Liao</span><span class="sep">&middot;</span>
+            <span>Zheda Mai</span><span class="sep">&middot;</span>
+            <span>Xingjian Li</span><span class="sep">&middot;</span>
+            <span>Xiao Wang</span><span class="sep">&middot;</span>
+            <span>Hao Xu</span><span class="sep">&middot;</span>
+            <span>Jihun Hamm</span><span class="sep">&middot;</span>
+            <span>Xue Lin</span><span class="sep">&middot;</span>
+            <span>Min Xu</span><span class="sep">&middot;</span>
+            <span>Qifan Wang</span><span class="sep">&middot;</span>
+            <span>Tianyang Wang&dagger;</span><span class="sep">&middot;</span>
+            <span>Cheng Han&dagger;</span>
+        </div>
+        <div class="meta-notes">* Equal contribution &nbsp;&nbsp; &dagger; Corresponding authors</div>
+        <div class="affiliations">
+            University of Alabama at Birmingham &middot; Tulane University &middot; Northeastern University &middot; University of Missouri-Kansas City &middot; Johns Hopkins University &middot; Ohio State University &middot; Carnegie Mellon University &middot; Oak Ridge National Laboratory &middot; Harvard University &middot; MBZUAI &middot; Meta AI
+        </div>
+
+        <div class="links-row">
+            <a href="https://arxiv.org/abs/2510.13219" class="link-pill primary">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
+                Paper (arXiv)
+            </a>
+            <a href="https://openreview.net/forum?id=UwtXDttgsE" class="link-pill secondary">
+                <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/></svg>
+                OpenReview
+            </a>
+            <a href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning" class="link-pill secondary">
+                <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.3 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+                GitHub
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- ════════ TL;DR ════════ -->
+<div class="section">
+    <div class="col">
+        <div class="tldr">
+            A unified map of how small prompts&mdash;pixels added to images or tokens injected into transformers&mdash;can adapt frozen vision models to new tasks without touching their weights.
+        </div>
+
+        <div class="stats">
+            <div class="stat"><div class="num">300+</div><div class="lbl">Papers</div></div>
+            <div class="stat"><div class="num">5</div><div class="lbl">Prompt types</div></div>
+            <div class="stat"><div class="num">6+</div><div class="lbl">Domains</div></div>
+            <div class="stat"><div class="num">1st</div><div class="lbl">Unified PA survey</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- ════════ ABSTRACT ════════ -->
+<div class="section">
+    <div class="col">
+        <div class="section-label">Abstract</div>
+        <p>In computer vision, Visual Prompting (VP) and Visual Prompt Tuning (VPT) have recently emerged as lightweight and effective alternatives to full fine-tuning for adapting large-scale vision models within the "pretrain-then-finetune" paradigm. However, despite rapid progress, their conceptual boundaries remain blurred, as VP and VPT are frequently used interchangeably in current research, reflecting a lack of systematic distinction between these techniques and their respective applications.</p>
+        <p>In this survey, we revisit the designs of VP and VPT from first principles, and conceptualize them within a unified framework termed <strong>Prompt-based Adaptation (PA)</strong>. Within this framework, we distinguish methods based on their injection granularity: VP operates at the pixel level, while VPT injects prompts at the token level. We further categorize these methods by their generation mechanism into fixed, learnable, and generated prompts. Beyond the core methodologies, we examine PA's integrations across diverse domains&mdash;including medical imaging, 3D point clouds, and vision-language tasks&mdash;as well as its role in test-time adaptation and trustworthy AI.</p>
+    </div>
+</div>
+
+<!-- ════════ OVERVIEW FIGURE ════════ -->
+<div class="section">
+    <div class="col">
+        <div class="section-label">Overview</div>
+        <h2>How Prompt-based Adaptation Works</h2>
+        <p class="muted">PA introduces two complementary mechanisms for steering frozen vision backbones with minimal parameter updates: modifying pixels before the model sees them (VP), or inserting learnable tokens inside the model (VPT).</p>
+    </div>
+    <div class="col-wide">
+        <figure>
+            <img src="assets/main1.jpg" alt="Comparison of transfer learning and prompt-based adaptation methods">
+            <figcaption><strong>Figure 1.</strong> Transfer learning vs. prompt-based adaptation. (a) Conventional protocols grouped by tuning scope. (b) VPT freezes the backbone and optimizes additional prompt tokens together with the head. (c) VP modifies the input space by adding pixel-level prompts while keeping the backbone frozen.</figcaption>
+        </figure>
+    </div>
+</div>
+
+<!-- ════════ TAXONOMY ════════ -->
+<div class="section">
+    <div class="col">
+        <div class="section-label">Taxonomy</div>
+        <h2>A Unified View of PA</h2>
+        <p class="muted">Methods are categorized by <em>where</em> prompts are injected and <em>how</em> they are obtained.</p>
+
+        <div class="taxonomy-row">
+            <div class="tax-block vp">
+                <h3>Visual Prompting (VP)</h3>
+                <div class="subtitle">Pixel-level &mdash; applied before tokenization</div>
+                <dl>
+                    <dt>VP-Fixed</dt>
+                    <dd>Static points, boxes, masks (e.g. SAM)</dd>
+                    <dt>VP-Learnable</dt>
+                    <dd>Optimized overlays, frequency cues</dd>
+                    <dt>VP-Generated</dt>
+                    <dd>Instance-adaptive prompts via generators</dd>
+                </dl>
+            </div>
+            <div class="tax-block vpt">
+                <h3>Visual Prompt Tuning (VPT)</h3>
+                <div class="subtitle">Token-level &mdash; injected inside the network</div>
+                <dl>
+                    <dt>VPT-Learnable</dt>
+                    <dd>Gradient-trained tokens, shallow or deep</dd>
+                    <dt>VPT-Generated</dt>
+                    <dd>Network-produced adaptive tokens</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-wide">
+        <figure>
+            <img src="assets/main2.jpg" alt="VPT variants">
+            <figcaption><strong>Figure 2.</strong> VPT variants. <em>Left:</em> Shallow prompts at the first layer only. <em>Middle:</em> Deep prompts injected at every transformer layer. <em>Right:</em> Generated prompts produced per-instance by a lightweight network.</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/main3.jpg" alt="VP variants">
+            <figcaption><strong>Figure 3.</strong> VP variants. <em>Left:</em> Fixed prompts (predefined boxes, points). <em>Middle:</em> Learned pixel-space overlays. <em>Right:</em> Generator-produced instance-adaptive image prompts.</figcaption>
+        </figure>
+    </div>
+</div>
+
+<!-- ════════ APPLICATIONS ════════ -->
+<div class="section chip-section">
+    <div class="col">
+        <div class="section-label">Applications</div>
+        <h2>Where PA Is Used</h2>
+
+        <h3>Foundational CV Tasks</h3>
+        <div class="chip-grid">
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#foundational-cv-tasks">Segmentation</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#foundational-cv-tasks">Restoration &amp; Enhancement</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#foundational-cv-tasks">Compression</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#foundational-cv-tasks">Multi-Modal Alignment</a>
+        </div>
+
+        <h3>Domain-Specific</h3>
+        <div class="chip-grid">
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#domain-specific-applications">Medical &amp; Biomedical</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#domain-specific-applications">Remote Sensing</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#domain-specific-applications">Robotics &amp; Embodied AI</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#domain-specific-applications">Industrial Inspection</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#domain-specific-applications">Autonomous Driving</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#domain-specific-applications">3D Point Clouds &amp; LiDAR</a>
+        </div>
+
+        <h3>Constrained Learning Paradigms</h3>
+        <div class="chip-grid">
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#pa-under-constrained-learning">Test-Time Adaptation</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#pa-under-constrained-learning">Continual Learning</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#pa-under-constrained-learning">Few-Shot / Zero-Shot</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#pa-under-constrained-learning">Black-Box Adaptation</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#pa-under-constrained-learning">Federated Learning</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#pa-under-constrained-learning">Source-Free Adaptation</a>
+        </div>
+
+        <h3>Trustworthy AI</h3>
+        <div class="chip-grid">
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#trustworthy-ai">Adversarial Robustness</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#trustworthy-ai">Fairness &amp; Bias Mitigation</a>
+            <a class="chip" href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning#trustworthy-ai">Privacy &amp; Security</a>
+        </div>
+    </div>
+</div>
+
+<!-- ════════ CHALLENGES ════════ -->
+<div class="section">
+    <div class="col">
+        <div class="section-label">Open Questions</div>
+        <h2>Key Challenges &amp; Future Directions</h2>
+
+        <details class="challenge-item">
+            <summary>Safety Alignment</summary>
+            <div class="challenge-body">Prompt interventions can be exploited by malicious actors to generate harmful content. Aligning PA with human values requires robustness evaluations, continuous monitoring, and systematic bias audits throughout development and deployment.</div>
+        </details>
+
+        <details class="challenge-item">
+            <summary>Training Overhead &amp; Stability</summary>
+            <div class="challenge-body">Although per-iteration cost is low, the total training duration often exceeds full fine-tuning due to extensive hyperparameter search over prompt length, learning rate, and initialization. Seed sensitivity further compounds the issue, demanding multiple runs for reliable results.</div>
+        </details>
+
+        <details class="challenge-item">
+            <summary>Inference Latency</summary>
+            <div class="challenge-body">Supplementary prompt components increase memory consumption at inference time. Pruning, knowledge distillation, and quantization are promising directions for mitigating this overhead without sacrificing adaptation quality.</div>
+        </details>
+
+        <details class="challenge-item" open>
+            <summary>Real-World Evaluation</summary>
+            <div class="challenge-body">Current PA methods are predominantly benchmarked on VTAB-1k, FGVC, and ImageNet. Evaluation on diverse, complex, distribution-shifting datasets is needed to validate practical applicability in real-world deployment scenarios.</div>
+        </details>
+    </div>
+</div>
+
+<!-- ════════ CITATION ════════ -->
+<div class="section">
+    <div class="col">
+        <div class="section-label">Citation</div>
+        <h2>BibTeX</h2>
+        <div class="bib-block">
+            <button class="copy-btn" onclick="copyBib()">Copy</button>
+<pre id="bibtex">@article{xiao2025prompt,
+  title   = {Prompt-based Adaptation in Large-scale Vision
+             Models: A Survey},
+  author  = {Xiao, Xi and Zhang, Yunbei and Zhao, Lin
+             and Liu, Yiyang and Liao, Xiaoying and Mai, Zheda
+             and Li, Xingjian and Wang, Xiao and Xu, Hao
+             and Hamm, Jihun and Lin, Xue and Xu, Min
+             and Wang, Qifan and Wang, Tianyang and Han, Cheng},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2026},
+  url     = {https://openreview.net/forum?id=UwtXDttgsE}
+}</pre>
+        </div>
+    </div>
+</div>
+
+<!-- ════════ FOOTER ════════ -->
+<footer>
+    <div class="col">
+        <a href="https://arxiv.org/abs/2510.13219">arXiv</a> &nbsp;&middot;&nbsp;
+        <a href="https://openreview.net/forum?id=UwtXDttgsE">OpenReview</a> &nbsp;&middot;&nbsp;
+        <a href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning">GitHub</a>
+    </div>
+</footer>
+
+<script>
+function copyBib() {
+    const t = document.getElementById('bibtex').textContent;
+    navigator.clipboard.writeText(t).then(() => {
+        const b = document.querySelector('.copy-btn');
+        b.textContent = 'Copied!';
+        setTimeout(() => b.textContent = 'Copy', 1800);
+    });
+}
+</script>
+
+</body>
+</html>

@@ -1,3 +1,9 @@
+# Overleaf project (local reference only)
+68eda9e33bbbb1e919bfbbfe/
+
+# macOS
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
