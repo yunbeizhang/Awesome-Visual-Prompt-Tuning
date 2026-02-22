@@ -13,7 +13,9 @@
 
 **Accepted to [Transactions on Machine Learning Research (TMLR)](https://jmlr.org/tmlr/) 2026**
 
-Xi Xiao\*, Yunbei Zhang\*, Lin Zhao\*, Yiyang Liu\*, Xiaoying Liao, Zheda Mai, Xingjian Li, Xiao Wang, Hao Xu, Jihun Hamm, Xue Lin, Min Xu, Qifan Wang, Tianyang Wang†, Cheng Han†
+Xi Xiao\*, Yunbei Zhang\*, Lin Zhao\*, Yiyang Liu\*, Xiaoying Liao, Zheda Mai, Xingjian Li, 
+
+Xiao Wang, Hao Xu, Jihun Hamm, Xue Lin, Min Xu, Qifan Wang, Tianyang Wang†, Cheng Han†
 
 </div>
 
