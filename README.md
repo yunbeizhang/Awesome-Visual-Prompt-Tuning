@@ -7,7 +7,6 @@
 [![OpenReview](https://img.shields.io/badge/OpenReview-UwtXDttgsE-8c1b13.svg?style=flat-square)](https://openreview.net/forum?id=UwtXDttgsE)
 [![Project Page](https://img.shields.io/badge/Project-Page-green.svg?style=flat-square)](https://yunbeizhang.github.io/Awesome-Visual-Prompt-Tuning/)
 [![Awesome](https://img.shields.io/badge/Awesome-Prompt--Based%20Adaptation-fc60a8.svg?style=flat-square)](https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 *A curated list of papers, resources and tools on **Prompt-Based Adaptation (PA)** for large-scale vision models.*
