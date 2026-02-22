@@ -206,14 +206,3 @@ We welcome new papers, implementations, and corrections! Please categorize contr
 - VPT-Learnable / VPT-Generated
 - And note the application domain (e.g., Medical, 3D, Remote Sensing).
 
----
-
-## Star History
-
-<a href="https://star-history.com/#yunbeizhang/Awesome-Visual-Prompt-Tuning&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=yunbeizhang/Awesome-Visual-Prompt-Tuning&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=yunbeizhang/Awesome-Visual-Prompt-Tuning&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=yunbeizhang/Awesome-Visual-Prompt-Tuning&type=Date" />
- </picture>
-</a>
